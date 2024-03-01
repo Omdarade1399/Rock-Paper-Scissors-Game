@@ -1,35 +1,28 @@
 //Switch Statement
 
-var day = "friday";
+var areaOfShape = "square";
+var a = 5;
+var b = 10;
+var result;
 
-switch(day){
+switch(areaOfShape){
     
-      case "monday": 
-        console.log("lets have a party today");
+      case "square": 
+        result = a * a;
+        console.log(result);
         break;
 
-        case "tuesday": 
-        console.log("lets go for a walk");
+        case "rectangle": 
+        result = a * b;
+        console.log(result);
         break;
 
-        case "wednesday": 
-        console.log("lets drink today");
+        case "circle": 
+        var r = 2;
+        result = 3.142 * (r * r);
+        console.log(result);
         break;
 
-        case "thursday": 
-        console.log("lets go shopping today");
-        break;
-
-        case "friday": 
-        console.log("lets have a match today");
-        break;
-        
-        case "saturday": 
-        console.log("lets sleep today");
-        break;
-        
-        case "sunday": 
-        console.log("lets vibe today");
-        break;
+        default: console.log("no shape matched");
 }
    
