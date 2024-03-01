@@ -1,28 +1,45 @@
-//Switch Statement
+//While-Loop to count from 1 to 10//
 
-var areaOfShape = "square";
-var a = 5;
-var b = 10;
-var result;
+var num= 1;
+while(num <= 10) {
+  console.log(num);
+  num++;
+}
 
-switch(areaOfShape){
-    
-      case "square": 
-        result = a * a;
-        console.log(result);
-        break;
+//Do-While-Loop to count from 1 to 10//
 
-        case "rectangle": 
-        result = a * b;
-        console.log(result);
-        break;
+var num= 1;
+do {
+  console.log(num);
+  num++;
+}while (num <= 10)
 
-        case "circle": 
-        var r = 2;
-        result = 3.142 * (r * r);
-        console.log(result);
-        break;
+//For-Loop to count from 1 to 10//
 
-        default: console.log("no shape matched");
+for(var num= 1; num <= 10; num++){
+  console.log(num);
+}
+
+//Table of 5 using all loops//
+
+//While-Loop//
+var num= 1;
+while(num <= 10){
+  console.log("5*" + num + " = " + 5 * num);
+  num++;
+}
+
+
+//Do-While-Loop//
+var num= 11;
+do{
+  console.log("5*" + num + " = " + 5 * num);
+  num++;
+}while(num <= 20)
+
+
+//For-Loop//
+for(var num= 21; num <= 30; num++){
+  console.log("5 *" + num + " = " + 5 * num)
 }
    
