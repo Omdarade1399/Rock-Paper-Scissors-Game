@@ -1,45 +1,31 @@
-//While-Loop to count from 1 to 10//
+// Making a calculator function//
 
-var num= 1;
-while(num <= 10) {
-  console.log(num);
-  num++;
+const calculator = (num1, num2, operator) => {
+    let result;
+    switch(operator){
+      case "+":
+        return num1 + num2;
+
+        case "-":
+        return num1 - num2;
+
+        case "*":
+        return num1 * num2;
+
+        case "/":
+          if(num2 === 0){
+            return "0 is not allowed"
+          }else{
+            return num1 / num2;
+          }
+
+          default:
+            return "No operator found"
+    }
 }
 
-//Do-While-Loop to count from 1 to 10//
-
-var num= 1;
-do {
-  console.log(num);
-  num++;
-}while (num <= 10)
-
-//For-Loop to count from 1 to 10//
-
-for(var num= 1; num <= 10; num++){
-  console.log(num);
-}
-
-//Table of 5 using all loops//
-
-//While-Loop//
-var num= 1;
-while(num <= 10){
-  console.log("5*" + num + " = " + 5 * num);
-  num++;
-}
-
-
-//Do-While-Loop//
-var num= 11;
-do{
-  console.log("5*" + num + " = " + 5 * num);
-  num++;
-}while(num <= 20)
-
-
-//For-Loop//
-for(var num= 21; num <= 30; num++){
-  console.log("5 *" + num + " = " + 5 * num)
-}
+console.log(calculator(5, 7, "+"));
+console.log(calculator(5, 7, "-"));
+console.log(calculator(5, 7, "*"));
+console.log(calculator(5, 7, "/"));
    
