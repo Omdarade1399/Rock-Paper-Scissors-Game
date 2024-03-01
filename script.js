@@ -1,31 +1,13 @@
-// Making a calculator function//
+// Making a reverse string//
 
-const calculator = (num1, num2, operator) => {
-    let result;
-    switch(operator){
-      case "+":
-        return num1 + num2;
-
-        case "-":
-        return num1 - num2;
-
-        case "*":
-        return num1 * num2;
-
-        case "/":
-          if(num2 === 0){
-            return "0 is not allowed"
-          }else{
-            return num1 / num2;
-          }
-
-          default:
-            return "No operator found"
+const isReverse= (str)=>{
+    let reverse= "";
+    for(let char=str.length-1; char >= 0; char--){
+      reverse = reverse + str[char];
     }
-}
+     return reverse;
+};
 
-console.log(calculator(5, 7, "+"));
-console.log(calculator(5, 7, "-"));
-console.log(calculator(5, 7, "*"));
-console.log(calculator(5, 7, "/"));
+console.log(isReverse("Om Darade"));
+
    
