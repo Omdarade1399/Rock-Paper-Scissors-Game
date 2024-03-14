@@ -1,13 +1,10 @@
-// Making a reverse string//
+//* Making a while loop for a practise q1
 
-const isReverse= (str)=>{
-    let reverse= "";
-    for(let char=str.length-1; char >= 0; char--){
-      reverse = reverse + str[char];
-    }
-     return reverse;
-};
+let gameNum = 45;
+let userNum = prompt("GUESS THE GAME NUMBER :");
 
-console.log(isReverse("Om Darade"));
-
+while (userNum != gameNum) {
+  userNum = prompt("You guessed the wrong number, Guess again :");
+}
    
+  console.log("Congratulation you entered the correct number!");
