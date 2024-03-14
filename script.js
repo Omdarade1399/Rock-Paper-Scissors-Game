@@ -7,4 +7,4 @@ while (userNum != gameNum) {
   userNum = prompt("You guessed the wrong number, Guess again :");
 }
    
-  console.log("Congratulation you entered the correct number!");
+  alert("Congratulation you entered the correct number!");
