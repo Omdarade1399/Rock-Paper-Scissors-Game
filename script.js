@@ -1,10 +1,17 @@
-//* Making a while loop for a practise q1
+//* Creating a function to count vowels in a string //
 
-let gameNum = 45;
-let userNum = prompt("GUESS THE GAME NUMBER :");
-
-while (userNum != gameNum) {
-  userNum = prompt("You guessed the wrong number, Guess again :");
+function countVowel(str){
+  let count = 0;
+  for (const char of str){
+        if(char=== "a" || 
+           char=== "e" ||  
+           char=== "i" ||  
+           char=== "o" ||  
+           char=== "u"){
+          count++;
+        }
+  }
+   return count;
 }
-   
-  alert("Congratulation you entered the correct number!");
+
+ console.log("vowel count of Apna College is " + countVowel("apna college"));
