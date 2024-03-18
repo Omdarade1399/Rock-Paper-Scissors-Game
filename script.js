@@ -1,17 +1,23 @@
-//* Creating a function to count vowels in a string //
+//* Solving a practice question: creating a prompt to ask a number and giving out an array then making a function to give out sum and factorial of the array!! //
 
-function countVowel(str){
-  let count = 0;
-  for (const char of str){
-        if(char=== "a" || 
-           char=== "e" ||  
-           char=== "i" ||  
-           char=== "o" ||  
-           char=== "u"){
-          count++;
-        }
-  }
-   return count;
+let n = prompt("Enter a number:");
+
+let arr = [];
+
+for (let i = 1; i <= n; i++){
+  arr[i - 1] = i;
 }
 
- console.log("vowel count of Apna College is " + countVowel("apna college"));
+   console.log(arr);
+
+   let sum = arr.reduce((res, curr) =>{
+         return res + curr;
+   });
+
+    console.log("sum =" + sum);
+
+    let factorial = arr.reduce((res, curr) =>{
+         return res * curr; 
+    });
+
+    console.log("factorial =" + factorial);
