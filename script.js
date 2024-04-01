@@ -21,9 +21,20 @@ function addCountry() {
 
 
 
-//* Practicing
+//* Practice 1//
 
-let fullName = prompt("please enter full name wihtout spaces");
+// let fullName = prompt("please enter full name wihtout spaces");
 
-let userName = "@" + fullName + fullName.length;
-console.log(userName)
+// let userName = "@" + fullName + fullName.length;
+// console.log(userName)
+
+//* practice 2//
+
+let items = [250, 645, 300, 900, 50];
+let i=0;
+for(let val of items){
+  let offer = val / 10;
+  items[i] -= offer;
+  console.log(`Value of items after offer is ${items[i]}`); 
+  i++;
+}
