@@ -18,3 +18,12 @@ function addCountry() {
     countryInput.value = "";
   }
 }
+
+
+
+//* Practicing
+
+let fullName = prompt("please enter full name wihtout spaces");
+
+let userName = "@" + fullName + fullName.length;
+console.log(userName)
