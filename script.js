@@ -50,7 +50,15 @@
 //  console.log(output);
 
 //* Practice 4//
-let h2 = document.querySelector("h2")
 
-h2.innerText = h2.innerText + " from Apna College student";
+// let h2 = document.querySelector("h2")
+// h2.innerText = h2.innerText + " from Apna College student";
+
+//* Practice 5//
+
+let divs = document.querySelectorAll(".box");
+console.log(divs);
+divs[0].innerText = "New Unique Text 1";
+divs[1].innerText = "New Unique Text 2";
+divs[2].innerText = "New Unique Text 3";
 

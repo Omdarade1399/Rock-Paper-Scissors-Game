@@ -68,3 +68,12 @@ li {
     text-align: center;
     padding: 2px;
 } */
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: aquamarine;
+    text-align: center;
+}
