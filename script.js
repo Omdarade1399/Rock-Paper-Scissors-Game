@@ -57,8 +57,10 @@
 //* Practice 5//
 
 let divs = document.querySelectorAll(".box");
-console.log(divs);
-divs[0].innerText = "New Unique Text 1";
-divs[1].innerText = "New Unique Text 2";
-divs[2].innerText = "New Unique Text 3";
+ 
+let idx = 1;
+for(let div of divs){
+  div.innerText = `New Unique Value ${idx}`;
+  idx++;
+}
 
